@@ -1,6 +1,7 @@
 package com.server;
 
 import com.server.config.WebConfig;
+import com.server.repository.RemindRepository;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
@@ -20,6 +21,7 @@ public class ApplicationInitializer implements WebApplicationInitializer{
         ServletRegistration.Dynamic servlet=servletContext.addServlet("dispatcher", new DispatcherServlet(stx));
         servlet.addMapping("/");
         servlet.setLoadOnStartup(1);
+
 
     }
 }

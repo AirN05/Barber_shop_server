@@ -16,7 +16,7 @@
     </column>
     <column id="9" parent="7" name="remind_date">
       <mandatory>1</mandatory>
-      <data-type>datetime|0</data-type>
+      <data-type>date|0</data-type>
     </column>
     <column id="10" parent="7" name="title">
       <mandatory>1</mandatory>

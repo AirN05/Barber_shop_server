@@ -1,7 +1,6 @@
 package com.server.service;
 
 import com.server.entity.Home;
-
 import java.util.List;
 
 public interface HomeService {

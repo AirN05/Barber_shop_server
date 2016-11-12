@@ -1,16 +1,12 @@
 package com.server.service;
 
 import com.server.entity.Home;
-import com.server.entity.Remind;
 import com.server.repository.HomeRepository;
-import com.server.repository.RemindRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-
+import org.springframework.stereotype.Service;
 import java.util.List;
 
-/**
- * Created by 1 on 10.11.2016.
- */
+@Service
 public class HomeServiceImpl implements HomeService {
 
     @Autowired

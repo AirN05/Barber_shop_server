@@ -1,0 +1,329 @@
+body{
+	background: #1f1e1e;
+	//background-image: url(../pic/back.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	overflow: auto;
+	height: 100%;
+
+}
+
+.header_{
+
+	//background: rgba(0, 0, 0, 0.8);
+	background: black;
+	top: 0%;
+	left: 0%;
+	position: fixed;
+	height: 100%;
+	width: 10.2em;
+	white-space: nowrap;
+	
+	display: block;
+	
+}
+
+.header__logo 
+{
+	display: inline-block;
+	width: 9.9em;
+	height: 7.9em;
+	top:0.1em;
+	left: 0.1em;
+	position: fixed;
+
+}
+
+.header__menu{
+
+	display: block;
+	top: 10em;
+	position: fixed;
+	overflow: auto;
+	padding: 0em;
+	//width: 9.9em;
+	overflow: auto;
+	
+	
+}
+ul.header__menu__items{
+	padding-left: 0;
+}
+
+ul.header__menu__items li
+{
+	
+    padding: 0.65em;
+	font-size: 1.3em;
+	background: rgba(0, 0, 0, 0.8);
+	font-family: 'Lobster', cursive;
+	font-family: "Century Gothic", sans-serif;
+	width: 6.5em;
+	text-align: center;
+	white-space: normal;
+
+}
+
+
+
+ul.header__menu__items li:hover 
+{
+	background: #313131;
+	transition: 1s;
+}
+
+a
+{   
+    text-decoration:none;
+	color: white;
+}
+
+.content{
+
+	///background: rgba(255, 255, 255, 0.6);
+	width: 83vw;
+	left:12em;
+	top:4em;
+	right:0em;
+	bottom: 1em;
+	position: fixed;
+	padding: 1em;
+	margin: auto;
+	overflow-y: auto;
+	overflow-x: none; 
+	
+	
+}
+
+.text{
+
+	font-family: "Century Gothic", sans-serif;
+	text-align: center;
+	color:white;
+
+}
+
+.price__img{
+	display: block;
+    margin: 0 auto; 
+}
+
+.content__photo{
+
+	display: inline-block;
+	width: 10em;
+	height: 10em;
+}
+
+.content__photo__img{
+
+	display: inline-block;
+	width: 7.5em;
+	height: 7.5em;
+	border-radius: 50%;
+	float: left;
+
+	
+}
+
+.content__desc{
+	display: inline-block;
+	padding: 1.5em;
+	float: right;
+	position: absolute;
+	left:12em;
+	text-align: left;
+	width: 80%;
+}
+
+.choice{
+	width: 50%;
+	height: 100%;
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+    color:white;
+    text-shadow: 1px 1px 5px black;
+    padding: 2em;
+    //left:20em;
+    //position: fixed;
+    background-image: url(../pic/back.jpg);
+    background-size: cover;
+    z-index: 4;
+
+}
+
+.choice:hover{
+	background: rgba(0, 0, 0, 0.1);
+	transition: 3s;
+
+}
+
+
+.prod__Img{
+	width: 10em;
+	height: 10em;
+	display: inline-block;
+}
+
+.prod__Name{
+	font-family: 'Lobster', cursive;
+    font-size: 1.15em;
+    color:white;
+    text-align: center;
+    display: block;
+    width: 9em;
+
+}
+
+.selectEmp{
+	background-color: #1f1e1e;
+	margin: 1em;
+}
+
+.button__ok{
+	margin: 1em;
+	padding: 1em;
+	background: black;
+	border-radius: 8px;
+	border: 0px;
+}
+
+.button__del{
+	margin: 1em;
+	padding: 1em;
+	background: black;
+	border-radius: 8px;
+	border: 0px;
+	float: right;
+}
+
+.button__ok:hover{
+cursor: pointer;
+}
+.out{
+	position: fixed;
+	left: 89%;
+	top:2%;
+	
+	
+}
+
+.table{
+
+    width: 50em;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 8px;
+	border: 0px;
+
+    
+}
+.table__header{
+    font-weight: 400;
+    width: 20%;
+    cursor: pointer;
+    background: black;
+    border-radius: 8px;
+	border: 0px;
+}
+.table__header-active{
+    font-weight: 800;
+    color:white;
+
+}
+
+.editText{
+	background-color: #1e1e1e;
+	border: 0px;
+	padding: 0.5em;
+	width: 90%;
+	text-align: left;
+}
+
+	
+.addText{
+	background-color: #565656;
+	border: 0px;
+	width: 40vw;
+	text-align: left;
+	margin: 0.5em;
+	padding: 0.5em;
+	border-radius: 8px;
+	border: 0px;
+
+	
+}
+
+label{
+
+	text-align: left;
+	margin: 0.5em;
+	position: absolute;
+ }
+ .content .form__login{
+
+ 	width: 25vw;
+ 	position: absolute;
+ 	left: 30%;
+ 	background: #0e0c0c;
+ 	top: 30%;
+ 	padding: 1em;
+ 	border-radius: 8px;
+ }
+
+ .form__login .addText{
+
+ 	width: 20vw;
+ 	padding: 0.5em;
+ 	margin-left: 2em;
+ 	margin-right: 2em;
+ 	border-radius: 8px;
+ }
+
+ .form__login .button__ok{
+ 	float:right;
+ }
+ 
+ul.content__ul
+{
+	list-style-type: none;
+}
+
+.price_block{
+
+	width: 70vw;
+}
+
+.add{
+	left: 10%;
+	position: absolute;
+}
+
+.add .button__ok{
+	float: right;
+}
+
+.add p.text{
+	text-align: left;
+	margin: 0.5em;
+}
+.price__desc{
+	text-align: left;
+	width: 40%;
+	display: inline-block;
+}
+
+.price__num{
+
+	display: inline-block;
+	width: 40%;
+}
+
+.price__block .line{
+	background-color: #444444;
+	width:100%;
+	left:10%;
+	position: absolute;
+	height: 1px;
+	border: none;
+}

@@ -1,0 +1,64 @@
+<menu></menu>
+
+	<div class="content" ng-controller="editController">
+		
+		<!-- <form>
+			<input type="text" ng-model="username" >  </input>
+		</form> -->
+
+		<div >
+			<select  ng-model="name.selected" class="selectEmp text">
+				<option  ng-repeat="man in employ" value="{{man.id_emp}}">{{man.name}}</option>
+			</select>
+				
+				<!-- <select  ng-model="selectedDate" class="selectEmp text" ng-options="newDate(item.date) as ( item.date | date: 'dd.MM.yyyy') for item in schedule | unique: 'newDate(item.date)'"> 
+				</select> -->
+
+				<!-- <input type="date" ng-model="selectedDate" class="selectEmp text" pattern="dd.MM.YYYY"/>  -->
+			<select  ng-model="selectedDate" class="selectEmp text"> 
+			<option ng-repeat="item in schedule | unique: 'newDate(item.date)'">{{newDate(item.date)}}</option>
+				</select> 
+
+			<!-- <button class="button__ok selectEmp text" ng-click="choiceEmp()">OK</button> -->
+
+			<p class="text">{{selected}}</p>
+
+			 <!-- Selected Date: {{ date | date:'yyyy-MM-dd a' }} -->
+		</div>
+
+	<table class="table text" ng-init="order='id'">
+		<tr>
+			<td class="table__header text" 
+				ng-class="{'table__header-active':order=='id'}" >
+				 Время
+			
+			<td class="table__header text" 
+				ng-class="{'table__header-active':order=='remind'}">
+				Имя
+			<td class="table__header text" 
+				ng-class="{'table__header-active':order=='remind'}">
+				Email
+			<td class="table__header text" 
+				ng-class="{'table__header-active':order=='remind'}">
+				Телефон
+			<td class="table__header text" 
+				ng-class="{'table__header-active':order=='bool'}">
+				
+		</tr>
+	<!-- 	(item.id_emp==name.selected)&& -->
+	<!-- 	<tr ng-if="(item.id_emp==name.selected)&&((item.date | date: 'dd.MM.yyyy')==(selectedDate| date: 'dd.MM.yyyy'))" ng-model="item.id_res" ng-repeat="item in schedule | orderBy:order:reverse"> -->
+		<tr ng-if="(item.id_emp==name.selected)&&((item.date | date: 'dd.MM.yyyy')==(selectedDate| date: 'dd.MM.yyyy'))" ng-model="item.id_res" ng-repeat="item in schedule | orderBy:order:reverse">
+			
+			<td>{{ item.date | date:'HH:mm'}}</td>
+			<td ></td>
+			<td ></td>
+			<td ></td>
+			<td><input type="checkbox" ng-model="item.reserve" ng-true-value="1" ng-false-value="0" ng-change="changeSchedule(item)"></td>
+		</tr>
+	</table>
+
+			<!-- <button class="button__ok selectEmp text" ng-click="changeSchedule()">Сохранить изменения</button>
+ -->
+
+		
+	</div>
